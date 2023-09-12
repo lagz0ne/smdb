@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "bradlc.vscode-tailwindcss",
+    "task.vscode-task",
+    "prisma.prisma",
+    "redhat.vscode-yaml"
+  ]
+}

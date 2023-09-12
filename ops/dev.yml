@@ -1,0 +1,13 @@
+version: '3'
+
+tasks:
+  
+  prep:
+    cmds:
+      - yarn install
+      - task: :be:m
+
+  up:
+    deps:
+      - :fe:d
+      - :be:d

@@ -1,0 +1,21 @@
+# yarn specific
+**/.yarn/*
+**/.yarn/cache
+**/node_modules
+!**/.yarn/patches
+!**/.yarn/plugins
+!**/.yarn/releases
+!**/.yarn/sdks
+!**/.yarn/versions
+
+# next specific
+**/.next
+
+# distribution in general
+**/dist
+
+# Mac specific
+**/.DS_Store
+
+# taskfile specific
+.task

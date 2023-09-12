@@ -1,0 +1,31 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "./client"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = "postgresql://localhost:5000/postgres"
+}
+
+model Machines {
+  id          String @id @default(uuid())
+  version     String
+  description String
+  stateMachine Json
+  isDeleted Boolean @default(false)
+}
+
+model Instances {
+  id String @id @default(uuid())
+  context Json
+
+  isFinal Boolean @default(false) 
+}
+
+model Events {
+  id String @id @default(uuid())
+  type String
+ 
+  createdAt DateTime @default(now())
+}

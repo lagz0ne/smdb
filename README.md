@@ -1,2 +1,3 @@
-# smdb
-State-machine DB is a service built on top of Statemachine to orchestrate business flows using XState
+# SMDB
+
+SMDB stands for State-Machine-Database. This is a service to orchestrate business flow utilizing XState
